@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LitmusOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportWidth="24.0"
+        android:viewportHeight="24.0">
+
+    <group>
+        <path
+            android:fillColor="?android:attr/colorPrimary"
+            android:fillType="evenOdd"
+            android:strokeWidth="1"
+            android:pathData="M53.17 68.7433L68.99 52.0033L23.81 52.0033C23.61 52.0033 23.42 52.0033 23.22 51.9933C21.81 51.9233 20.54 51.3233 19.6 50.3933C19.39 50.1833 19.2 49.9533 19.03 49.7133C18.75 49.3233 18.51 48.8833 18.34 48.4233C18.14 47.9033 18.02 47.3533 17.99 46.7733L17.99 46.5633C17.97 46.2133 17.97 45.8633 17.99 45.5233L17.99 0.893311C17.7 1.02331 17.41 1.17331 17.13 1.33331L1.41 16.6233C0.5 17.6933 0 19.0633 0 20.4833L0 55.1133C0 55.1133 0 55.1233 0 55.1333L0 56.0833C0.01 56.4633 0.02 56.8333 0.04 57.2133C0.06 57.4933 0.09 57.7733 0.13 58.0533C0.55 61.1233 1.97 63.8833 4.03 65.9633C4.9 66.8233 5.88 67.5633 6.95 68.1733C8.46 69.0333 10.14 69.6133 11.93 69.8633C12.21 69.9033 12.49 69.9333 12.78 69.9533C13.16 69.9733 13.53 69.9833 13.91 69.9933L14.86 69.9933C14.86 69.9933 14.87 69.9933 14.88 69.9933L49.5 70.0033C50.83 70.0033 52.12 69.5533 53.17 68.7433Z" />
+        <path
+            android:fillColor="?android:attr/colorPrimary"
+            android:fillType="evenOdd"
+            android:strokeWidth="1"
+            android:pathData="M0.536377 18L46.1664 18C46.3564 18 46.5364 18 46.7264 18.01C46.7364 18.01 46.7464 18.01 46.7564 18.01C48.1664 18.08 49.4364 18.68 50.3764 19.61C50.5864 19.82 50.7764 20.04 50.9464 20.28C51.2364 20.68 51.4664 21.11 51.6464 21.58C51.8364 22.1 51.9564 22.65 51.9864 23.23L51.9864 23.44C52.0064 23.79 52.0064 24.13 51.9864 24.48L51.9864 69.46C52.6364 69.17 53.2364 68.75 53.7464 68.24L67.0464 54.93C68.9264 53.06 69.9764 50.51 69.9764 47.86L69.9764 14.89C69.9764 14.88 69.9764 14.88 69.9764 14.87L69.9764 13.92C69.9764 13.54 69.9664 13.17 69.9364 12.79C69.9164 12.51 69.8864 12.23 69.8564 11.95C69.4364 8.88 68.0164 6.12 65.9464 4.04C63.6064 1.72 60.4064 0.21 56.8664 0.03C56.6264 0.02 56.3864 0.01 56.1464 0.01L26.6064 0L22.1264 0C19.5864 0 17.1564 0.96 15.2964 2.69L10.9864 7L1.75638 16.24C1.24638 16.75 0.836377 17.35 0.536377 18Z" />
+    </group>
+</vector>

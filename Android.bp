@@ -53,9 +53,17 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+        "LitmusCustom/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages com.evolution.settings"],
+
     resource_dirs: [
         "res",
+        "LitmusCustom/res",
         "TouchGestures/res"
     ],
 
@@ -102,6 +110,9 @@ android_library {
         "telephony-common",
         "ims-common",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {

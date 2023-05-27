@@ -21,6 +21,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- LitmusOS logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="litmus_logo"
+        android:layout="@layout/litmus_logo"
+        android:selectable="false"/>
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -29,6 +35,33 @@
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+    <!-- LitmusOS version -->
+    <Preference
+        android:key="litmusos_version"
+        android:title="@string/litmusos_version"
+        android:summary="@string/litmusos_version_codename"
+        settings:enableCopying="true"
+        settings:searchable="false"/>
+
+   <!-- LitmusOS Maintainer -->
+   <Preference
+       android:key="litmus_maintainer"
+       android:title="@string/litmus_maintainer"
+       android:summary="@string/litmus_maintainer_name"
+       settings:enableCopying="true" >
+       <intent
+          android:action="android.intent.action.VIEW"
+          android:data="@string/litmus_maintainer_group"/>
+    </Preference>
+
+    <!-- Build date -->
+    <Preference 
+        android:key="build_date"
+        android:title="@string/build_date"
+        android:summary="@string/build_date_default"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
 
     <!-- Security patch -->
     <Preference
@@ -71,5 +104,4 @@
         android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
-
 </PreferenceScreen>

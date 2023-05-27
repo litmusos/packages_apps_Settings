@@ -14456,5 +14456,9 @@
     <string name="bt_le_audio_scan_qr_code_scanner">To start listening, center the QR code below</string>
     <!-- [CHAR LIMIT=NONE] Hint for QR code process failure -->
     <string name="bt_le_audio_qr_code_is_not_valid_format">QR code isn\u0027t a valid format</string>
-
+ 
+    <!-- LitmusOS maintainer in About phone -->
+    <string name="litmus_maintainer">Maintainer</string>
+    <string name="litmus_maintainer_name" translatable="false">William_Sado</string>
+    <string name="litmus_maintainer_group" translatable="false">https://t.me/litmusos_channel</string>
 </resources>

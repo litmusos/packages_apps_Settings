@@ -122,5 +122,7 @@
 
     <!-- About device screen, ActualRealityOS -->
     <string name="litmusos_version">LitmusOS version</string>
+    <string name="litmus_version_default">thalassa</string>
+    <string name="keywords_litmus_version">LitmusOS version, litmus version</string>
 
 </resources>

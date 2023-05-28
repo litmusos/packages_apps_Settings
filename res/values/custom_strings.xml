@@ -115,15 +115,12 @@
     <string name="face_unlock_method_default">When the screen is turned on</string>
     <string name="face_unlock_method_swipe">When swiping on lock screen</string>
 
-    <!-- About phone screen, dot OS version -->
-    <string name="litmus_version">LitmusOS version</string>
-    <string name="litmus_version_default">Unknown</string>
-    <string name="keywords_litmus_version">LitmusOS version, litmus version</string>
-
     <!-- About phone screen, build date -->
     <string name="build_date">Build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
     <string name="keywords_build_date">build date, build info</string>
 
-</resources>
+    <!-- About device screen, ActualRealityOS -->
+    <string name="litmusos_version">LitmusOS version</string>
+
 </resources>

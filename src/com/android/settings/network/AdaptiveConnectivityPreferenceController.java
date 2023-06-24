@@ -19,7 +19,6 @@ package com.android.settings.network;
 import android.content.Context;
 import android.provider.Settings;
 
-import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
@@ -30,30 +29,19 @@ import com.android.settings.core.BasePreferenceController;
  */
 public class AdaptiveConnectivityPreferenceController extends BasePreferenceController {
 
-    public boolean mIsEnabled;
-
     public AdaptiveConnectivityPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
-        mIsEnabled = mContext.getResources().getBoolean(R.bool.config_show_adaptive_connectivity);
     }
 
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        
-       final Preference preference = screen.findPreference(getPreferenceKey());
-        
-       if (!mIsEnabled || preference == null || !preference.isVisible()) {
-            return;
-        }
-
-        preference.setTitle(R.string.adaptive_connectivity_title);
-        preference.setIcon(R.drawable.ic_adaptive_connectivity);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return mIsEnabled ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return mContext.getResources().getBoolean(R.bool.config_show_adaptive_connectivity)
+                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override

@@ -21,15 +21,6 @@
     android:key="top_level_settings">
 
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.litmus.settings.LitmusOSSettings"
-        android:icon="@drawable/ic_settings_litmus"
-        android:key="top_level_litmuscustom"
-        android:order="-160"
-        android:title="@string/litmuscustom_dashboard_title"
-        android:summary="@string/litmuscustom_dashboard_summary"
-        settings:controller="com.litmus.settings.TopLevelLitmusOSSettingsPreferenceController"/>
-
-    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
         android:key="top_level_network"

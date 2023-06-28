@@ -75,4 +75,12 @@
     <string name="face_unlock_method_title">允许在锁定屏幕使用人脸识别解锁</string>
     <string name="face_unlock_method_default">当屏幕开启时</string>
     <string name="face_unlock_method_swipe">在锁定屏幕上滑动时</string>
+
+    <!-- About phone cards -->
+    <string name="about_device_nearby">设备名将会被附近的设备查看</string>
+    <string name="device_model">设备型号</string>
+    <string name="storage_1">总共</string>
+    <string name="edit">编辑</string>
+    <string name="device_name">设备名</string>
+
 </resources>

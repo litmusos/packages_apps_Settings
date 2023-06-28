@@ -5,7 +5,7 @@
     android:viewportHeight="245">
   <path
       android:pathData="M25,0L373,0A25,25 0,0 1,398 25L398,220A25,25 0,0 1,373 245L25,245A25,25 0,0 1,0 220L0,25A25,25 0,0 1,25 0z"
-      android:fillColor="#E8DEF8"/>
+      android:fillColor="@color/litmus_banner_shape2"/>
   <group>
     <clip-path
         android:pathData="M0,0h398v245h-398z"/>

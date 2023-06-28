@@ -14,7 +14,7 @@
 <resources>
     <color name="litmus_shapeColor">@*android:color/system_accent1_100</color>
     <color name="litmus_colorAboutUI">@*android:color/system_neutral1_100</color>
-    <color name="litmus_banner_shape1">@*android:color/system_neutral1_10</color>
-    <color name="litmus_banner_shape2">@*android:color/system_accent2_600</color>
+    <color name="litmus_banner_shape1">@android:color/system_neutral2_800</color>
+    <color name="litmus_banner_shape2">@android:color/system_accent1_50</color>
     <color name="strokeAboutUI">#1f000000</color>
 </resources>

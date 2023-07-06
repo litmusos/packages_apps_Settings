@@ -39,6 +39,7 @@ import com.android.settingslib.core.lifecycle.events.OnCreate;
 import com.android.settingslib.core.lifecycle.events.OnSaveInstanceState;
 
 import com.android.settingslib.widget.LayoutPreference;
+import com.android.settings.deviceinfo.HardwareInfoPreferenceController;
 
 import kotlin.Unit;
 
@@ -51,7 +52,9 @@ public class DeviceNamePreferenceController extends BasePreferenceController
     @VisibleForTesting
     static final int RES_SHOW_DEVICE_NAME_BOOL = R.bool.config_show_device_name;
     private String mDeviceName;
+    private String mModelName;
     protected WifiManager mWifiManager;
+    private HardwareInfoPreferenceController mHardwareInfoPreferenceController;
     private final BluetoothAdapter mBluetoothAdapter;
     private final WifiDeviceNameTextValidator mWifiDeviceNameTextValidator;
     private LayoutPreference mPreference;
@@ -66,7 +69,7 @@ public class DeviceNamePreferenceController extends BasePreferenceController
         mWifiDeviceNameTextValidator = new WifiDeviceNameTextValidator();
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        initializeDeviceName();
+        initializeDeviceInfo();
     }
 
     @Override
@@ -76,23 +79,29 @@ public class DeviceNamePreferenceController extends BasePreferenceController
         mDeviceCard = mPreference.findViewById(R.id.about_device_header);
         final CharSequence deviceName = getSummary();
         mDeviceCard.setDeviceName(deviceName.toString(), mWifiDeviceNameTextValidator.isTextValid(deviceName.toString()));
+        setModelName(mModelName);
         mDeviceCard.setListener(s -> {
             setDeviceName(s);
             return Unit.INSTANCE;
         });
     }
 
-    private void initializeDeviceName() {
+    private void initializeDeviceInfo() {
         mDeviceName = Settings.Global.getString(mContext.getContentResolver(),
                 Settings.Global.DEVICE_NAME);
         if (mDeviceName == null) {
             mDeviceName = Build.MODEL;
         }
+        mModelName = getModel().toString();
     }
 
     @Override
     public CharSequence getSummary() {
         return mDeviceName;
+    }
+
+    public CharSequence getModel() {
+        return mHardwareInfoPreferenceController.getDeviceModel();
     }
 
     @Override
@@ -129,6 +138,10 @@ public class DeviceNamePreferenceController extends BasePreferenceController
             setTetherSsidName(deviceName);
             mDeviceCard.setDeviceName(deviceName);
         }
+    }
+
+    private void setModelName(String modelName) {
+        mDeviceCard.setModelName(modelName);
     }
 
     private void setSettingsGlobalDeviceName(String deviceName) {
